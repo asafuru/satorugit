@@ -1,0 +1,37 @@
+$(function(){
+    $(".runaway-button").hover(
+        function(){
+            $(".runaway-button").animate({
+                "marginLeft":"100px"
+            });
+        }
+    )
+    $(".runaway-button1").hover(
+        function(){
+            $(".runaway-button1").animate({
+                "marginTop":"-200px"
+            });
+        }
+    )
+    $(".runaway-button2").hover(
+        function(){
+            $(".runaway-button2").animate({
+                "marginRight":"-600px"
+            });
+        }
+    )
+    $(".runaway-button3").hover(
+        function(){
+            $(".runaway-button3").animate({
+                "marginTop":"600px"
+            });
+        }
+    )
+    $(".runaway-button4").hover(
+        function(){
+            $(".runaway-button4").animate({
+                "marginLeft":"-600px"
+            });
+        }
+    )
+});
