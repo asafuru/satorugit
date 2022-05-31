@@ -1,40 +1,48 @@
 // _mixin.scss
-$mq-breakpoints: (
-  'xs': 321px,      //極小スマホ
-  'sm': 576px,      //小さめスマホ
-  'md': 768px,      //スマホ
-  'lg': 1024px,     //タブレット
-  'xl': 1280px,     //パソコン
-  'xxl': 1920px,    //大きいパソコン
-) !default;
-@mixin mq($breakpoint: md, $rule: min) {
-  $breakpoint: map-get($mq-breakpoints, $breakpoint);
-  @if $rule == max {
-    $breakpoint: $breakpoint - 1px;
-  }
-  @media screen and (#{$rule}-width: $breakpoint) {
-    @content;
-  }
+////////////////
+// mediaquery //
+////////////////
+//ブレイクポイントの設定
+@mixin breakpoint( $point ) {
+	@if $point == sp {
+		@media ( min-width: 375px ) {
+			@content ;
+		}
+	}
+	@if $point == pc {
+		@media ( min-width: 835px ) {
+			@content ;
+		}
+	}
+	@if $point == wide {
+		@media ( min-width: 1920px ) {
+			@content ;
+		}
+	}
 }
 
-// 使う時（min-width）
-.element01 {
-  // ここにsp用スタイル
-  @include mq {
-    // @media screen and (min-width: 768px)と同じ
-  }
-  @include mq(lg) {
-    // @media screen and (min-width: 1024px)と同じ
-  }
-}
+//使用例
+/*
+@use "../foundation/mixin";　　で呼び出しておいて
 
-// 使う時（max-width）
-.element02 {
-  // ここにpc用スタイル
-  @include mq(lg, max) {
-    // @media screen and (max-width: 1023px)と同じ
-  }
-  @include mq(md, max) {
-    // @media screen and (max-width: 767px)と同じ
-  }
+body {
+	min-width : 375px;
+	width     : 100%;
+	min-height: 100%;
+	height    : 100%;
+	font-size : 1.4rem;
+	overflow-x: hidden;
+	position  : relative;
+	@include mixin.breakpoint( tablet ) {　　←のように使う
+		overflow-x: inherit;
+	}
+}
+*/
+
+// 絶対配置中央揃え
+@mixin center-pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
 }
