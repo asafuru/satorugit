@@ -1,7 +1,12 @@
 // _mixin.scss
 ////////////////
-// mediaquery //
+// 目次        
+// ブレイクポイントの設定
+// 絶対配置中央揃え
+// border太さ・角R
+// 
 ////////////////
+
 //ブレイクポイントの設定
 @mixin breakpoint( $point ) {
 	@if $point == sp {
@@ -46,3 +51,15 @@ body {
   left: 50%;
   transform: translate(-50% , -50%);
 }
+
+//border太さ・角R
+@mixin boder ($border-W1:1px,
+              $border-R10:10px,
+              $border: solid,
+              $border-c:#707070){
+  border-width: $border-W1;
+  border-style: $border;
+  border-radius: $border-R10;
+  border-color: $border-c;
+}
+

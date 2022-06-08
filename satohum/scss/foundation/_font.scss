@@ -1,0 +1,17 @@
+//日本語、数字 bold regular
+@font-face {
+    font-family: 'M+1m';
+    src: url(../../font/M-1m/mplus-1m-bold.ttf) format('truetype');
+
+}
+//英字 roboto bold
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../font/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+/*
+body {
+	font-family: MyFont;  //@font-faceで定義したフォント名を指定
+}
+*/

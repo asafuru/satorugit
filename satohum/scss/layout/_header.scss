@@ -1,11 +1,66 @@
 @use "../foundation/color";
 @use "../foundation/mixin";
 
+
+
 .l-header{
-    min-width: 375px;
+    max-width: 375px;
     width: 100%;
-    height: 100%;
+    height: 217px;
     background-color: color.$bgc-header;
     color: color.$tc-brown;
+}
+//.l-header__inner{}
+
+.l-header__btnwrap{
+    display: flex;
+}
+.l-header__menu-btn{
+    margin-left: auto;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 2rem;
+    color: color.$tc-gray;
+}
+
+.l-header__logo{
+    display: flex;
+    justify-content: center;
+}
+.l-header__logoimg{
+    width: 54.135%;
+    margin-bottom: 38px;
+}
+
+.l-header__search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.l-header__search::before{
+    content: "";           /* 疑似要素に必須 */
+    width: 24px;           /* アイコンの横幅 */
+    height: 24px;          /* アイコンの高さ */
+    background: url(../../img/lupe.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute;    /* 相対位置に指定 */
+    top: 11px;              /* アイコンの位置 */
+    left: 56px;             /* アイコンの位置 */
+}
+
+.l-header__search-box{
+    @include mixin.boder;
+    width: 230px;
+    height: 46px;
+}
+
+.l-search-btn{
+    @include mixin.boder;
+    width: 6rem;
+    height: 46px;
+    margin-left: 12px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: color.$tc-gray;
 }
 

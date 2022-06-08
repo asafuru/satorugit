@@ -1,0 +1,26 @@
+@use "../foundation/mixin";
+@use "../foundation/font";
+
+:root {
+	font-size: 62.5%;//10px化
+}
+
+html {
+	height     : 100%;
+	font-weight: 500;
+	overflow-y: inherit;
+}
+
+body {
+	font-family: 'M+1m','Roboto', sans-serif;/*
+	min-width : 375px;
+	width     : 100%;
+	min-height: 100%;
+	height    : 100%;
+	font-size : 1.4rem;
+	overflow-x: hidden;
+	position  : relative;
+	@include mixin.breakpoint( tablet ) {
+		overflow-x: inherit;
+	}*/
+}
