@@ -101,10 +101,13 @@ body {
 
 .l-header__btnwrap {
   display: flex;
+  height: 40px;
 }
 
 .l-header__menu-btn {
   margin-left: auto;
+  padding-right: 1.6rem;
+  padding-top: 1.4rem;
   font-family: "Roboto";
   font-weight: bold;
   font-size: 2rem;
@@ -134,7 +137,7 @@ body {
   /* アイコンの横幅 */
   height: 24px;
   /* アイコンの高さ */
-  background: url(../../img/lupe.png) no-repeat center center/auto 100%;
+  background: url(../../img/パス\ 270.svg) no-repeat center center/auto 100%;
   /* 背景にアイコン画像を配置 */
   display: inline-block;
   /* 高さを持たせるためにインラインブロック要素にする */
@@ -142,7 +145,7 @@ body {
   /* 相対位置に指定 */
   top: 11px;
   /* アイコンの位置 */
-  left: 56px;
+  left: 42px;
   /* アイコンの位置 */
 }
 
@@ -153,6 +156,7 @@ body {
   border-color: #707070;
   width: 230px;
   height: 46px;
+  padding: 0;
 }
 
 .l-search-btn {
@@ -160,12 +164,14 @@ body {
   border-style: solid;
   border-radius: 10px;
   border-color: #707070;
-  width: 6rem;
+  width: 8rem;
   height: 46px;
   margin-left: 12px;
   font-size: 1.6rem;
   font-weight: bold;
   color: #707070;
+  background-color: #F2EDE9;
+  padding: 0;
 }
 
 /*
