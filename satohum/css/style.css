@@ -37,6 +37,10 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+ul {
+  list-style: none;
+}
+
 /*
 @use "../foundation/mixin";　　で呼び出しておいて
 
@@ -105,6 +109,7 @@ body {
 }
 
 .l-header__menu-btn {
+  border: none;
   margin-left: auto;
   padding-right: 1.6rem;
   padding-top: 1.4rem;
@@ -112,6 +117,7 @@ body {
   font-weight: bold;
   font-size: 2rem;
   color: #707070;
+  background-color: #FFF7EF;
 }
 
 .l-header__logo {
@@ -184,7 +190,6 @@ body {
 // ==========================================================================
 */
 /*
-@forward "layout/main";
 @forward "layout/sidebar";
 @forward "layout/footer";
 

@@ -20,6 +20,7 @@
 }
 //メニューボタン
 .l-header__menu-btn{
+    border: none;
     margin-left: auto;
     padding-right: 1.6rem;
     padding-top: 1.4rem;
@@ -27,6 +28,7 @@
     font-weight: bold;
     font-size: 2rem;
     color: color.$tc-gray;
+    background-color: color.$bgc-header;
 }
 //ロゴ
 .l-header__logo{
