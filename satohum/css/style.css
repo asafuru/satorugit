@@ -27,6 +27,7 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
   font: inherit;
+  padding: 0;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -58,11 +59,15 @@ body {
 }
 */
 @font-face {
-  font-family: "M+1m";
+  font-family: "M+1m B";
   src: url(../../font/M-1m/mplus-1m-bold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "M+1m R";
+  src: url(../../font/M-1m/mplus-1m-regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto B";
   src: url(../../font/Roboto/Roboto-Bold.ttf) format("truetype");
 }
 /*
@@ -81,7 +86,7 @@ html {
 }
 
 body {
-  font-family: "M+1m", "Roboto", sans-serif;
+  font-family: "M+1m B", "M+1m R", "Roboto", sans-serif;
   /*
   min-width : 375px;
   width     : 100%;
@@ -180,38 +185,79 @@ body {
   padding: 0;
 }
 
-/*
-// ==========================================================================
-// init
-// ==========================================================================
+.l-sidebar {
+  background-color: #F2EDE9;
+  width: 328px;
+  height: 2716px;
+}
 
-// ==========================================================================
-// Foundation
-// ==========================================================================
+.c-close-btn {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.c-close-btn::before, .c-close-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  /* 棒の幅（太さ） */
+  height: 45.2548339959px;
+  /*calc(32px*1.414) 棒の高さ */
+  background: #707070;
+}
+
+.c-close-btn::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.c-close-btn::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.c-menu-item {
+  font-size: 2.4rem;
+  color: #707070;
+}
+
+.c-menu-item__list {
+  font-family: "M+1m R";
+  font-size: 2rem;
+}
+
+/* 命名規則基本 
+.p-[block]-[Element]__[Modifire]
+blockの中にはどのページのどのsectionかわかるようにするため
+[ページ名-セクション名]とする。
+p-front-menu__li
 */
-/*
-@forward "layout/sidebar";
-@forward "layout/footer";
+.p-front-sidebar__btn {
+  display: flex;
+  padding-top: 2.5rem;
+  margin-left: auto;
+  margin-right: 1.7rem;
+  width: 32px;
+}
 
-// ==========================================================================
-// Object
-// ==========================================================================
-// -----------------------------------------------------------------
-// Component
-// -----------------------------------------------------------------
-@forward "";
-@forward "";
+.p-front-menu {
+  width: 100%;
+  margin-top: 21.2rem;
+}
 
-// -----------------------------------------------------------------
-// Project
-// -----------------------------------------------------------------
-@forward "";
-@forward "";
-@forward "";
-@forward "";
+.p-front-menu__list {
+  margin-bottom: 4.3rem;
+}
 
-// -----------------------------------------------------------------
-// Utility
-// -----------------------------------------------------------------
-@forward "";
-*//*# sourceMappingURL=style.css.map */
+.p-front-menu__ul {
+  padding-left: 2rem;
+}
+
+.p-front-menu__item {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 23px;
+}/*# sourceMappingURL=style.css.map */

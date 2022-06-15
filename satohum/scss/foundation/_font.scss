@@ -1,12 +1,18 @@
 //日本語、数字 bold regular
 @font-face {
-    font-family: 'M+1m';
+    font-family: 'M+1m B';
     src: url(../../font/M-1m/mplus-1m-bold.ttf) format('truetype');
 
 }
+@font-face {
+    font-family: 'M+1m R';
+    src: url(../../font/M-1m/mplus-1m-regular.ttf) format('truetype');
+
+}
+
 //英字 roboto bold
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto B';
     src: url(../../font/Roboto/Roboto-Bold.ttf) format('truetype');
 }
 

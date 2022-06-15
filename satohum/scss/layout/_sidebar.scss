@@ -2,3 +2,10 @@
 @use "../foundation/mixin";
 @use "../foundation/variable";
 
+.l-sidebar{
+    background-color: color.$bgc-sidebar;
+    width: 328px;
+    height: 2716px;
+}
+
+

@@ -1,0 +1,27 @@
+@use "../../foundation/color";
+@use "sass:math";
+
+.c-close-btn{
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+.c-close-btn::before,.c-close-btn::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px; /* 棒の幅（太さ） */
+    height: calc(32px*math.sin(45deg)*2); /*calc(32px*1.414) 棒の高さ */
+    background: color.$tc-gray;
+}
+.c-close-btn::before{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.c-close-btn::after{
+    transform: translate(-50%,-50%) rotate(45deg);
+
+}

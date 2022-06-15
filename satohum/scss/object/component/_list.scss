@@ -1,0 +1,12 @@
+@use "../../foundation/color";
+
+
+.c-menu-item{
+    font-size: 2.4rem;
+    color: color.$tc-gray;
+}
+.c-menu-item__list{
+    font-family: 'M+1m R';
+    font-size: 2rem;
+}
+
