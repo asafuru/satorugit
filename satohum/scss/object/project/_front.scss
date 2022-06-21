@@ -1,7 +1,7 @@
 @use "../../foundation/mixin";
 @use "sass:math";
 /* 命名規則基本 
-.p-[block]-[Element]__[Modifire]
+.p-[block]__[Element]--[Modifire]
 blockの中にはどのページのどのsectionかわかるようにするため
 [ページ名-セクション名]とする。
 p-front-menu__li
@@ -17,7 +17,7 @@ p-front-menu__li
 }
 .p-front-menu{
     width: 100%;
-    margin-top: 21.2rem;
+    margin-top: 15.5rem;
 }
 .p-front-menu__list{
     margin-bottom:4.3rem;

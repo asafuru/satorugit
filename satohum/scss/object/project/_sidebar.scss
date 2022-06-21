@@ -1,0 +1,9 @@
+@use "../../foundation/mixin";
+@use "../../foundation/color";
+@use "sass:math";
+
+.p-sidebar{
+    position:relative;
+    width: 375px;
+    background-color: color.$bgc-sidebar;
+}
