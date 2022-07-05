@@ -1,13 +1,19 @@
 @use "../../foundation/color";
 
 
-.c-menu-item{
+
+
+
+
+//////////
+//見出しのテキスト
+.c-menu-heading{
     font-size: 2.4rem;
     color: color.$tc-gray;
 }
+//各アイテムのテキスト
 .c-menu-item__list{
     font-family: 'M+1m R';
     font-size: 2rem;
     color: color.$tc-gray;
 }
-

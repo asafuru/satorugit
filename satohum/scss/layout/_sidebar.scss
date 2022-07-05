@@ -2,10 +2,30 @@
 @use "../foundation/mixin";
 @use "../foundation/variable";
 
-.l-sidebar{
-    background-color: color.$bgc-sidebar;
-    width: 328px;
+.l-sidebar-wrapper{
     height: 2716px;
+    position: fixed;
+    
 }
 
+.l-sidebar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: color.$c-mask;
+    //start位置と形状
+    top: 0;
+    right: -120%;
+    width: 375px;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    //
+    transition: 0.6s;
 
+}
+
+/*is-openがついたら位置を0に*/
+.is-open{
+    right: 0;
+    transition: 0.6s;
+}

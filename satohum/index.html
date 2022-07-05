@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="jp">
-  <!-- ---- -->
   <!-- head -->
-  <!-- ---- -->
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,117 +8,78 @@
     <link rel="stylesheet" href="css/style.css">
     <title>SatoHam</title>
   </head>
-  <!-- ---- -->
-  <!-- body -->
-  <!-- ---- -->
+  <!-- base -->
   <body class="l-base">
-    <!-- ------ -->
-    <!-- header -->
-    <!-- ------ -->
-    <header class="l-header">
-      <div class="l-header__inner">
-        <div class="l-header__btnwrap">
-          <button class="l-header__menu-btn">Menu</button>
+    <div class="l-wrapper">
+      <!-- header -->
+      <header class="l-header">
+        <div class="p-header__inner">
+          <div class="p-header__btnwrap">
+            <button class="p-header__menu-btn js-switch">Menu</button>
+          </div>
+          <div class="p-header__logo">
+            <img class="p-header__logoimg" src="img\pc_logo.png" alt="" srcset="">
+          </div>
+          <div class="p-header__search" >
+            <input class="p-header__search-box" type="search" placeholder="">
+            <button class="p-header__search-btn ">検索</button>
+          </div>
         </div>
-        <div class="l-header__logo">
-          <img class="l-header__logoimg" src="img\pc_logo.png" alt="" srcset="">
-        </div>
-        <div class="l-header__search" >
-          <input class="l-header__search-box" type="search" placeholder="">
-          <button class="l-search-btn ">検索</button>
-        </div>
-      </div>
-    </header>
-    <!-- ------- -->
-    <!-- section -->
-    <!-- ------- -->
-    <section class="l-main"></section>
-    <!-- ------- -->
-    <!-- sidebar -->
-    <!-- ------- -->
-    <section class="l-sidebar">
-      <div class="p-sidebar">
-        <div class="p-front-sidebar__btn">
-          <button class="c-close-btn"></button>
-        </div>
-        <ul class="p-front-menu">
-          <li class=" p-front-menu__list">
-            <p class="c-menu-item">バーガー</p>
-            <ul class="p-front-menu__ul">
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">ハンバーガー</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">チーズバーガー</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">テリヤキバーガー</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">アボカドバーガー</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">フィッシュバーガー</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">ベーコンバーガー</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">チキンバーガー</p>
-              </li>
-            </ul>
-          </li>
-          <li class="c-menu-item p-front-menu__list">
-            <p class="c-menu-item">サイド</p>
-            <ul class="p-front-menu__ul">
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">ポテト</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">ナゲット</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">サラダ</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">コーン</p>
-              </li>
-          </ul>
-          </li>
-          <li class="c-menu-item p-front-menu__list">
-            <p class="c-menu-item">ドリンク</p>
-            <ul class="p-front-menu__ul">
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">コーラ</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">ファンタ</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">オレンジ</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">アップル</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">紅茶（Ice/Hot）</p>
-              </li>
-              <li class="p-front-menu__item">
-                <p class="c-menu-item__list">コーヒー（Ice/Hot）</p>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- ------ -->
-    <!-- footer -->
-    <!-- ------ -->
-    <footer> 
-      <div class="footer">ぷ　______。___  iiii</div>
-    </footer>
+      </header>
+      <!-- sidebar -->
+      <div class="l-sidebar-wrapper">
+      <section class="l-sidebar">
+        <div class="p-nav">
+          <div class="p-nav__btn">
+            <button class="c-close-btn js-switch"></button>
+          </div>
+          
+        <nav class="p-menu">
+          <dl class="p-menu__container"><!-- ここからメニュ -->
+            <dt class="p-menu__heading c-menu-heading">バーガー</dt>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">ハンバーガー</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">チーズバーガー</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">テリヤキバーガー</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">アボカドバーガー</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">フィッシュバーガー</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">ベーコンバーガー</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">チキンバーガー</a></dd>
+          </dl>
+          <dl class="p-menu__container">
+              <dt class="p-menu__heading c-menu-heading">サイド</dt>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">ポテト</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">サラダ</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">ナゲット</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">コーン</a></dd>
+          </dl>
+          <dl class="p-menu__container">
+              <dt class="p-menu__heading c-menu-heading">ドリンク</dt>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">コーラ</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">ファンタ</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">オレンジ</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">アップル</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">紅茶（Ice/Hot）</a></dd>
+              <dd class="p-menu__item"><a href="#" class="p-menu__item-name c-menu-item__list">コーヒー（Ice/Hot）</a></dd>
+          </dl>
+        </nav>
+        
 
 
+
+        </div>
+      </section>
+      </div>
+      <!-- section -->
+      <section class="l-main"></section>
+      <!-- footer -->
+      <footer> 
+        <div class="footer">ぷ　______。___  iiii</div>
+      </footer>
+
+    <script src="js\jquery-3.6.0.min.js"></script>
+    <script src="js\script.js"></script>
+    
+  </div>
   </body>
 
 

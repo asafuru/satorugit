@@ -1,0 +1,29 @@
+@forward "../../foundation/mixin";
+@use "../../foundation/color";
+@use "sass:math";
+
+/* 命名規則基本 
+.p-[block]__[Element]--[Modifire]
+blockの中にはどのページのどのsectionかわかるようにするため
+[ページ名-セクション名]とする。
+p-front-menu__li
+*/
+
+//スライドインしてくるサイドバー全体
+.p-nav{
+    width: 328px;
+    background-color: color.$bgc-sidebar;
+    //スクロールできるように
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+//
+.p-nav__btn{
+    display: flex;
+    padding-top: 2.5rem;
+    margin-left: auto;
+    margin-right: 1.7rem;
+    width: 32px;
+}

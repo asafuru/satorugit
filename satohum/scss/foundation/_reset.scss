@@ -23,6 +23,10 @@
     font: inherit;
     padding: 0;
   }
+  //個人的追記
+  button{
+    cursor: pointer;
+  }
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
@@ -33,3 +37,7 @@
   ul{
     list-style: none;
   }
+  //個人的追記
+a{
+  text-decoration: none;
+}

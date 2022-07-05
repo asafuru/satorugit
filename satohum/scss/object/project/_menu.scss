@@ -1,0 +1,30 @@
+@forward "../../foundation/mixin";
+@use "../../foundation/color";
+@use "sass:math";
+
+
+
+.p-menu{
+    margin-top: 15.5rem;
+}
+
+.p-menu__container{
+    width: 100%;
+    margin: 4.6rem;
+}
+//
+.p-menu__heading{
+    margin-bottom:4.3rem;
+
+}
+//
+.p-menu__item{
+    padding-left: 2rem;
+
+}
+//
+.p-menu__item-name{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 23px;
+}

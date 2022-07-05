@@ -31,14 +31,15 @@
 // -----------------------------------------------------------------
 @forward "../scss/object/component/button";
 @forward "../scss/object/component/menu";
+
 //@forward "../scss/object/component/button";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@forward "../scss/object/project/front";
-//@forward "";
-//@forward "";
+@forward "../scss/object/project/nav";
+@forward "../scss/object/project/header";
+@forward "../scss/object/project/menu";
 //@forward "";
 
 // -----------------------------------------------------------------
