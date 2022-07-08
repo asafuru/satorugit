@@ -30,7 +30,7 @@
 // Component
 // -----------------------------------------------------------------
 @forward "../scss/object/component/button";
-@forward "../scss/object/component/menu";
+@forward "../scss/object/component/text";
 
 //@forward "../scss/object/component/button";
 
@@ -40,7 +40,8 @@
 @forward "../scss/object/project/nav";
 @forward "../scss/object/project/header";
 @forward "../scss/object/project/menu";
-//@forward "";
+@forward "../scss/object/project/mv";
+@forward "../scss/object/project/board";
 
 // -----------------------------------------------------------------
 // Utility
