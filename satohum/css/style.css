@@ -155,10 +155,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6px;
-  /* 棒の幅（太さ） */
-  height: 45.2548339959px;
-  /*calc(32px*1.414) 棒の高さ */
+  width: 6px; /* 棒の幅（太さ） */
+  height: 45.2548339959px; /*calc(32px*1.414) 棒の高さ */
   background: #707070;
 }
 
@@ -245,22 +243,14 @@ p-front-menu__li
 }
 
 .p-header__search::before {
-  content: "";
-  /* 疑似要素に必須 */
-  width: 24px;
-  /* アイコンの横幅 */
-  height: 24px;
-  /* アイコンの高さ */
-  background: url(../../img/パス\ 270.svg) no-repeat center center/auto 100%;
-  /* 背景にアイコン画像を配置 */
-  display: inline-block;
-  /* 高さを持たせるためにインラインブロック要素にする */
-  position: absolute;
-  /* 相対位置に指定 */
-  top: 11px;
-  /* アイコンの位置 */
-  left: 42px;
-  /* アイコンの位置 */
+  content: ""; /* 疑似要素に必須 */
+  width: 24px; /* アイコンの横幅 */
+  height: 24px; /* アイコンの高さ */
+  background: url(../../img/パス\ 270.svg) no-repeat center center/auto 100%; /* 背景にアイコン画像を配置 */
+  display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+  position: absolute; /* 相対位置に指定 */
+  top: 11px; /* アイコンの位置 */
+  left: 42px; /* アイコンの位置 */
 }
 
 .p-header__search-box {
@@ -326,46 +316,169 @@ p-front-menu__li
 }
 
 .p-board {
-  position: relative;
-}
-
-.p-board-bg {
+  display: grid;
+  width: 100%;
+  height: 1374px;
   padding: 2rem 2rem 0rem 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 642px;
+  gap: 20px;
 }
 
-.p-board__heading {
+.p-board-card1 {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  min-width: 335px;
+  height: 642px;
+  display: grid;
+  width: 305px;
+  min-height: 124px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 36.4rem minmax(124px, auto) minmax(124px, auto);
+}
+.p-board-card1__heading1 {
   position: absolute;
-  top: 3.1rem;
-  left: 3.5rem;
-  font-family: "Roboto B";
+  grid-column: 1/2;
+  grid-row: 1/2;
   font-size: 4.1rem;
+  font-family: "Roboto B";
   color: white;
+  margin: 11px 0 0 15px;
 }
-.p-board__heading + p {
-  top: 6.5rem;
-}
-
-.p-board-disc {
+.p-board-card1::after {
   position: absolute;
+  content: "";
   display: block;
+  background-color: white;
+  width: 33.9px;
+  height: 4px;
+  top: 80.3px;
+  left: 15.5px;
+}
+.p-board-card1__desc1 {
+  position: absolute;
+  grid-column: 1/2;
+  grid-row: 2/3;
   width: 305px;
   height: 124px;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.6);
-  top: 38.4rem;
+  overflow: hidden;
+  line-height: 1.6;
 }
-
-.p-board-disc__heading {
-  position: absolute;
+.p-board-card1__desc-heading {
   font-family: "M+1m B";
   font-size: 2.2rem;
   color: #3C2A10;
-  padding: 0.7rem 0 0 1rem;
+  padding: 7px 0 0 10px;
+}
+.p-board-card1__desc-text {
+  font-family: "M+1m R";
+  font-size: 1.6rem;
+  color: #3C2A10;
+  margin: auto 10px;
+}
+.p-board-card1__desc2 {
+  position: absolute;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 305px;
+  height: 124px;
+  margin: 0 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  line-height: 1.6;
+}
+.p-board-card1__desc-heading {
+  font-family: "M+1m B";
+  font-size: 2.2rem;
+  color: #3C2A10;
+  padding: 7px 0 0 10px;
+}
+.p-board-card1__desc-text {
+  font-family: "M+1m R";
+  font-size: 1.6rem;
+  color: #3C2A10;
+  margin: auto 10px;
+  overflow: hidden;
 }
 
-.p-board-disc__text {
+.p-board-card2 {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  min-width: 335px;
+  height: 642px;
+  display: grid;
+  width: 305px;
+  min-height: 124px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 36.4rem minmax(124px, auto) minmax(124px, auto);
+}
+.p-board-card2__heading1 {
   position: absolute;
-  padding: 4.1rem 1rem 1.5rem 1rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 4.1rem;
+  font-family: "Roboto B";
+  color: white;
+  margin: 11px 0 0 15px;
+}
+.p-board-card2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: white;
+  width: 33.9px;
+  height: 4px;
+  top: 80.3px;
+  left: 15.5px;
+}
+.p-board-card2__desc1 {
+  position: absolute;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 305px;
+  height: 124px;
+  margin: 0 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  line-height: 1.6;
+}
+.p-board-card2__desc-heading {
+  font-family: "M+1m B";
+  font-size: 2.2rem;
+  color: #3C2A10;
+  padding: 7px 0 0 10px;
+}
+.p-board-card2__desc-text {
+  font-family: "M+1m R";
+  font-size: 1.6rem;
+  color: #3C2A10;
+  margin: auto 10px;
+}
+.p-board-card2__desc2 {
+  position: absolute;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 305px;
+  height: 124px;
+  margin: 0 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  line-height: 1.6;
+}
+.p-board-card2__desc-heading {
+  font-family: "M+1m B";
+  font-size: 2.2rem;
+  color: #3C2A10;
+  padding: 7px 0 0 10px;
+}
+.p-board-card2__desc-text {
+  font-family: "M+1m R";
+  font-size: 1.6rem;
+  color: #3C2A10;
+  margin: auto 10px;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
