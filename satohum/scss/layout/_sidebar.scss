@@ -14,7 +14,7 @@
     background-color: color.$c-mask;
     //start位置と形状
     top: 0;
-    right: -120%;
+    left: 150%;
     width: 375px;
     height: 100%;
     position: fixed;
@@ -26,6 +26,6 @@
 
 /*is-openがついたら位置を0に*/
 .is-open{
-    right: 0;
+    left: 0;
     transition: 0.6s;
 }

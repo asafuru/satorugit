@@ -1,0 +1,30 @@
+@use "../../foundation/mixin";
+@use "../../foundation/color";
+@use "sass:math";
+
+
+.p-footer__info{
+    width: 500px;
+    position: absolute;
+    font-family: 'M+1m R';
+    color: white;
+    top: 0;
+    padding: 3.9rem 0 0 0;
+    margin: 0 auto;
+}
+.p-footer__info-text{
+    position: absolute;
+    font-family: 'M+1m R';
+    color: white;
+    font-size: 20px;
+    display: contents;
+}
+.p-footer__copyright{
+    position: absolute;
+    font-family: 'M+1m R';
+    color: white;
+    font-size: 14px;
+    top: 104px;
+    margin: 0 auto;
+    width: 100%;
+}

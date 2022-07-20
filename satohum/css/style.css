@@ -128,7 +128,7 @@ body {
   justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.3);
   top: 0;
-  right: -120%;
+  left: 150%;
   width: 375px;
   height: 100%;
   position: fixed;
@@ -138,8 +138,19 @@ body {
 
 /*is-openがついたら位置を0に*/
 .is-open {
-  right: 0;
+  left: 0;
   transition: 0.6s;
+}
+
+.l-footer {
+  font-family: "M+1m R";
+  color: white;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
 }
 
 .c-close-btn {
@@ -231,9 +242,11 @@ p-front-menu__li
   justify-content: center;
 }
 
-.p-header__logoimg {
-  width: 54.135%;
-  margin-bottom: 38px;
+.p-header__logo-name {
+  font-size: 4rem;
+  font-family: "Roboto B";
+  color: #707070;
+  padding-bottom: 3.8rem;
 }
 
 .p-header__search {
@@ -485,4 +498,80 @@ p-front-menu__li
   color: #3C2A10;
   margin: auto 10px;
   overflow: hidden;
+}
+
+.p-map {
+  position: relative;
+  width: 375px;
+  height: 691px;
+  z-index: -1;
+}
+
+.p-map__img {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+}
+
+.p-map__mask {
+  height: 415px;
+  background: black;
+  opacity: 0.6;
+}
+
+.p-map__mask2 {
+  height: 691px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.p-map__heading {
+  font-family: "M+1m B";
+  font-size: 3rem;
+  color: white;
+  padding: 40px 0 0 42px;
+}
+.p-map__heading::after {
+  content: "";
+  display: block;
+  width: 75px;
+  background-color: white;
+  height: 2px;
+  margin: 20px 0 0 0;
+}
+
+.p-map__text {
+  font-family: "M+1m B";
+  font-size: 1.4rem;
+  color: white;
+  position: absolute;
+  padding: 20px 40px 0 40px;
+  line-height: 33px;
+}
+
+.p-footer__info {
+  width: 500px;
+  position: absolute;
+  font-family: "M+1m R";
+  color: white;
+  top: 0;
+  padding: 3.9rem 0 0 0;
+  margin: 0 auto;
+}
+
+.p-footer__info-text {
+  position: absolute;
+  font-family: "M+1m R";
+  color: white;
+  font-size: 20px;
+  display: contents;
+}
+
+.p-footer__copyright {
+  position: absolute;
+  font-family: "M+1m R";
+  color: white;
+  font-size: 14px;
+  top: 104px;
+  margin: 0 auto;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

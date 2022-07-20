@@ -20,7 +20,7 @@
 @forward "layout/header";
 //@forward "layout/main";
 @forward "layout/sidebar";
-//@forward "layout/footer";
+@forward "layout/footer";
 
 
 // ==========================================================================
@@ -42,7 +42,8 @@
 @forward "../scss/object/project/menu";
 @forward "../scss/object/project/mv";
 @forward "../scss/object/project/board";
-
+@forward "../scss/object/project/map";
+@forward "../scss/object/project/footer";
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------

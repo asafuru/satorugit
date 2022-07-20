@@ -28,9 +28,11 @@
     display: flex;
     justify-content: center;
 }
-.p-header__logoimg{
-    width: 54.135%;
-    margin-bottom: 38px;
+.p-header__logo-name{
+    font-size: 4rem;
+    font-family: 'Roboto B';
+    color: color.$tc-gray;
+    padding-bottom: 3.8rem;
 }
 .p-header__search{
     position: relative;
