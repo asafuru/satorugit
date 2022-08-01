@@ -111,8 +111,7 @@ body {
 }
 
 .l-header {
-  max-width: 375px;
-  width: 100%;
+  width: 100vw;
   height: 217px;
   background-color: #FFF7EF;
   color: #3C2A10;
@@ -342,16 +341,16 @@ p-front-menu__li
 
 .p-board-card1 {
   z-index: -1;
-  position: relative;
+  gap: 15px;
   grid-column: 1/2;
   grid-row: 1/2;
   min-width: 335px;
-  height: 642px;
+  height: auto;
   display: grid;
   width: 305px;
   min-height: 124px;
   grid-template-columns: 1fr;
-  grid-template-rows: 36.4rem minmax(124px, auto) minmax(124px, auto);
+  grid-auto-rows: minmax(124px, auto);
 }
 .p-board-card1__heading1 {
   position: absolute;
@@ -362,25 +361,21 @@ p-front-menu__li
   color: white;
   margin: 11px 0 0 15px;
 }
-.p-board-card1::after {
-  position: absolute;
+.p-board-card1__heading1::after {
   content: "";
   display: block;
   background-color: white;
   width: 33.9px;
   height: 4px;
-  top: 80.3px;
-  left: 15.5px;
+  margin: 5px 0 0 0;
 }
 .p-board-card1__desc1 {
-  position: absolute;
   grid-column: 1/2;
   grid-row: 2/3;
   width: 305px;
-  height: 124px;
+  height: auto;
   margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.6);
-  overflow: hidden;
   line-height: 1.6;
 }
 .p-board-card1__desc-heading {
@@ -394,16 +389,15 @@ p-front-menu__li
   font-size: 1.6rem;
   color: #3C2A10;
   margin: auto 10px;
+  height: auto;
 }
 .p-board-card1__desc2 {
-  position: absolute;
   grid-column: 1/2;
   grid-row: 3/4;
   width: 305px;
-  height: 124px;
+  height: auto;
   margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.6);
-  overflow: hidden;
   line-height: 1.6;
 }
 .p-board-card1__desc-heading {
@@ -417,12 +411,11 @@ p-front-menu__li
   font-size: 1.6rem;
   color: #3C2A10;
   margin: auto 10px;
-  overflow: hidden;
+  height: auto;
 }
 
 .p-board-card2 {
   z-index: -1;
-  position: relative;
   grid-column: 1/2;
   grid-row: 2/3;
   min-width: 335px;
@@ -442,62 +435,55 @@ p-front-menu__li
   color: white;
   margin: 11px 0 0 15px;
 }
-.p-board-card2::after {
-  position: absolute;
+.p-board-card2__heading1::after {
   content: "";
   display: block;
   background-color: white;
   width: 33.9px;
   height: 4px;
-  top: 80.3px;
-  left: 15.5px;
+  margin: 5px 0 0 0;
 }
 .p-board-card2__desc1 {
-  position: absolute;
   grid-column: 1/2;
   grid-row: 2/3;
   width: 305px;
   height: 124px;
   margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.6);
-  overflow: hidden;
   line-height: 1.6;
 }
-.p-board-card2__desc-heading {
+.p-board-card2__desc1-heading {
   font-family: "M+1m B";
   font-size: 2.2rem;
   color: #3C2A10;
   padding: 7px 0 0 10px;
 }
-.p-board-card2__desc-text {
+.p-board-card2__desc1-text {
   font-family: "M+1m R";
   font-size: 1.6rem;
   color: #3C2A10;
   margin: auto 10px;
 }
 .p-board-card2__desc2 {
-  position: absolute;
   grid-column: 1/2;
   grid-row: 3/4;
   width: 305px;
   height: 124px;
   margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.6);
-  overflow: hidden;
   line-height: 1.6;
 }
-.p-board-card2__desc-heading {
+.p-board-card2__desc2-heading {
   font-family: "M+1m B";
   font-size: 2.2rem;
   color: #3C2A10;
   padding: 7px 0 0 10px;
 }
-.p-board-card2__desc-text {
+.p-board-card2__desc2-text {
   font-family: "M+1m R";
   font-size: 1.6rem;
   color: #3C2A10;
   margin: auto 10px;
-  overflow: hidden;
 }
 
 .p-map {

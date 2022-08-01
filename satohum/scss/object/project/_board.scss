@@ -14,16 +14,16 @@
 }
 .p-board-card1{
     z-index: -1;
-    position: relative;
+    gap: 15px;
     grid-column: 1/2;
     grid-row: 1/2;
     min-width: 335px;
-    height: 642px;
+    height: auto;
     display: grid;
     width: 305px;
     min-height: 124px;
     grid-template-columns: 1fr;
-    grid-template-rows: 36.4rem minmax(124px,auto) minmax(124px,auto);
+    grid-auto-rows: minmax(124px,auto);
         &__heading1{
             position: absolute;
             grid-column: 1/2;
@@ -32,27 +32,24 @@
             font-family: 'Roboto B';
             color: white;
             margin: 11px 0 0 15px;
-        }
-        &::after{
-            position: absolute;
-            content: "";
-            display: block;
-            background-color: white;
-            width: 33.9px;
-            height: 4px;
-            top: 80.3px;
-            left: 15.5px;
+            &::after{
+                content: "";
+                display: block;
+                background-color: white;
+                width: 33.9px;
+                height: 4px;
+                margin: 5px 0 0 0;
+            }
         }
 
+
         &__desc1{
-            position: absolute;
             grid-column: 1/2;
             grid-row: 2/3;
             width: 305px;
-            height: 124px;
+            height: auto;
             margin: 0 15px;
             background-color: color.$c-mapmask ;
-            overflow: hidden;
             line-height: 1.6;
         }
         &__desc-heading{
@@ -66,16 +63,15 @@
             font-size: 1.6rem;
             color: color.$tc-brown;
             margin: auto 10px;
+            height: auto;
         }
         &__desc2{
-            position: absolute;
             grid-column: 1/2;
             grid-row: 3/4;
             width: 305px;
-            height: 124px;
+            height: auto;
             margin: 0 15px;
             background-color: color.$c-mapmask ;
-            overflow: hidden;
             line-height: 1.6;
         }
         &__desc-heading{
@@ -89,7 +85,7 @@
             font-size: 1.6rem;
             color: color.$tc-brown;
             margin: auto 10px;
-            overflow: hidden;
+            height: auto;
         }
 }
 
@@ -100,7 +96,6 @@
 
 .p-board-card2{
     z-index: -1;
-    position: relative;
     grid-column: 1/2;
     grid-row: 2/3;
     min-width: 335px;
@@ -118,64 +113,57 @@
             font-family: 'Roboto B';
             color: white;
             margin: 11px 0 0 15px;
+            &::after{
+                content: "";
+                display: block;
+                background-color: white;
+                width: 33.9px;
+                height: 4px;
+                margin: 5px 0 0 0;
+            }
         }
-        &::after{
-            position: absolute;
-            content: "";
-            display: block;
-            background-color: white;
-            width: 33.9px;
-            height: 4px;
-            top: 80.3px;
-            left: 15.5px;
-        }
-
+        
         &__desc1{
-            position: absolute;
             grid-column: 1/2;
             grid-row: 2/3;
             width: 305px;
             height: 124px;
             margin: 0 15px;
             background-color: color.$c-mapmask ;
-            overflow: hidden;
             line-height: 1.6;
         }
-        &__desc-heading{
+        &__desc1-heading{
             font-family: 'M+1m B';
             font-size: 2.2rem;
             color: color.$tc-brown;
             padding: 7px 0 0 10px;
         }
-        &__desc-text{
+        &__desc1-text{
             font-family: 'M+1m R';
             font-size: 1.6rem;
             color: color.$tc-brown;
             margin: auto 10px;
         }
         &__desc2{
-            position: absolute;
             grid-column: 1/2;
             grid-row: 3/4;
             width: 305px;
             height: 124px;
             margin: 0 15px;
             background-color: color.$c-mapmask ;
-            overflow: hidden;
             line-height: 1.6;
         }
-        &__desc-heading{
+        &__desc2-heading{
             font-family: 'M+1m B';
             font-size: 2.2rem;
             color: color.$tc-brown;
             padding: 7px 0 0 10px;
         }
-        &__desc-text{
+        &__desc2-text{
             font-family: 'M+1m R';
             font-size: 1.6rem;
             color: color.$tc-brown;
             margin: auto 10px;
-            overflow: hidden;
         }
 }
 
