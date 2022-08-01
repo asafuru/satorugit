@@ -332,7 +332,6 @@ p-front-menu__li
   z-index: -1;
   display: grid;
   width: 100%;
-  height: 1374px;
   padding: 2rem 2rem 0rem 2rem;
   grid-template-columns: 1fr;
   grid-template-rows: 642px;
@@ -340,6 +339,7 @@ p-front-menu__li
 }
 
 .p-board-card1 {
+  overflow-y: scroll;
   z-index: -1;
   gap: 15px;
   grid-column: 1/2;
@@ -350,7 +350,7 @@ p-front-menu__li
   width: 305px;
   min-height: 124px;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(124px, auto);
+  grid-auto-rows: 36.4rem minmax(124px, auto) minmax(124px, auto);
 }
 .p-board-card1__heading1 {
   position: absolute;
@@ -487,6 +487,7 @@ p-front-menu__li
 }
 
 .p-map {
+  margin-top: 4.9rem;
   position: relative;
   width: 375px;
   height: 691px;
