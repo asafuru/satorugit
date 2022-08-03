@@ -120,6 +120,7 @@ body {
 .l-sidebar-wrapper {
   height: 2716px;
   position: fixed;
+  z-index: 10;
 }
 
 .l-sidebar {
@@ -149,7 +150,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
 }
 
 .c-close-btn {
@@ -329,18 +329,15 @@ p-front-menu__li
 }
 
 .p-board {
-  z-index: -1;
   display: grid;
   width: 100%;
   padding: 2rem 2rem 0rem 2rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 642px;
+  grid-template-rows: auto;
   gap: 20px;
 }
 
 .p-board-card1 {
-  overflow-y: scroll;
-  z-index: -1;
   gap: 15px;
   grid-column: 1/2;
   grid-row: 1/2;
